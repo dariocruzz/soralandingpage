@@ -329,15 +329,15 @@ ul, ol { list-style: none; }
 }
 
 .cs-metrics-bento {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
-  margin-bottom: 48px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  margin-bottom: 64px;
 }
 .cs-num {
-  display: block; font-family: var(--serif); font-size: clamp(40px, 5vw, 64px);
-  color: #fff; line-height: 1; margin-bottom: 8px; letter-spacing: -.03em;
-  text-shadow: 0 0 40px rgba(123, 47, 190, 0.4);
+  display: block; font-family: var(--serif); font-size: clamp(56px, 7vw, 84px);
+  color: var(--accent); line-height: 1; margin-bottom: 12px; letter-spacing: -.03em;
+  text-shadow: 0 0 50px rgba(123, 47, 190, 0.5);
 }
-.cs-label { font-size: 13px; color: var(--muted); line-height: 1.5; font-weight: 500; }
+.cs-label { font-size: 16px; color: var(--paper); line-height: 1.5; font-weight: 500; }
 
 .cs-quote { border-left: 2px solid var(--accent); padding-left: 24px; }
 .cs-quote p {
@@ -358,6 +358,15 @@ ul, ol { list-style: none; }
   font-family: var(--serif); font-size: clamp(28px, 3.5vw, 44px);
   font-style: italic; color: var(--muted); max-width: 700px; line-height: 1.25;
 }
+
+.system-flow-visual {
+  display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;
+  margin: 0 auto 64px; padding: 32px; background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; max-width: 900px; width: calc(100% - var(--pad)*2);
+}
+.sf-node { font-size: 14px; font-weight: 600; color: var(--paper); letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 20px; background: rgba(255,255,255,0.05); border-radius: 8px; }
+.sf-node.highlighted { color: #000; background: var(--accent); box-shadow: 0 0 30px rgba(123,47,190,0.5); }
+.sf-arrow { color: var(--muted); opacity: 0.4; font-size: 18px; }
 
 .service-list .srv-item {
   display: grid; grid-template-columns: 200px 1fr; gap: 40px;
@@ -510,5 +519,8 @@ footer { border-top: 1px solid var(--border); padding: 40px var(--pad); }
   .btn-whatsapp { width: 100%; padding: 20px; }
   
   .client-filter-box { flex-direction: column; padding: 24px; gap: 12px; }
+  
+  .system-flow-visual { gap: 10px; padding: 20px 16px; border-radius: 8px; }
+  .sf-node { font-size: 11px; padding: 6px 12px; }
 }
 
