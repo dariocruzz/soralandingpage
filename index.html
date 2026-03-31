@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sora — Apps que hacen crecer tu negocio</title>
+  <meta name="description" content="Diseñamos y desarrollamos apps que venden, automatizan y escalan tu negocio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo" aria-label="Sora">
+        <span class="logo-kanji">空</span>
+        <span class="logo-name">Sora</span>
+      </a>
+      <div class="nav-links">
+        <a href="#beneficios" data-i18n="nav.benefits">Qué resolvemos</a>
+        <a href="#trabajo" data-i18n="nav.work">Trabajo</a>
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#contacto" class="nav-cta" data-i18n="nav.contact">Hablemos hoy</a>
+        <button id="langToggle" class="lang-toggle">EN</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#beneficios" data-i18n="nav.benefits">Qué resolvemos</a>
+    <a href="#trabajo" data-i18n="nav.work">Trabajo</a>
+    <a href="#servicios" data-i18n="nav.services">Servicios</a>
+    <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+    <a href="#contacto" data-i18n="nav.contact">Hablemos hoy</a>
+  </div>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-top reveal" style="margin-bottom: 32px;">
+        <span class="hero-label" data-i18n="hero.label" style="background: rgba(123,47,190,0.15); border: 1px solid var(--accent); padding: 8px 14px; border-radius: 4px; color: #fff;">La mayoría de las apps pierden dinero. La tuya no debería.</span>
+        <span class="hero-loc" style="display:none;">Buenos Aires · Est. 2025</span>
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="ht-line" data-i18n="hero.l1">Apps que hacen</span>
+        <span class="ht-line ht-italic" data-i18n="hero.l2">crecer tu negocio.</span>
+      </h1>
+      <div class="hero-rule"></div>
+      <div class="hero-footer reveal" style="--d:.1s">
+        <p class="hero-sub" data-i18n="hero.sub">Dejá de perder tiempo y clientes por sistemas que no funcionan. Construimos la tecnología que elimina cuellos de botella y hace crecer tu negocio.</p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn-primary" data-i18n="hero.ctaPrimary">Quiero mi app</a>
+          <a href="#trabajo" class="btn-outline" data-i18n="hero.ctaSecondary">Ver cómo trabajamos ↓</a>
+        </div>
+        <p class="hero-urgency" data-i18n="hero.urgency">⚡ Solo trabajamos con 2 empresas nuevas por mes. Este mes queda <span style="color: #fff;">1</span> lugar.</p>
+      </div>
+
+      <div class="hero-authority reveal" style="--d:.2s">
+        <span class="auth-label" data-i18n="auth.label">Infraestructura confiable para:</span>
+        <div class="auth-sectors">
+          <div class="auth-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            <span>NexFlow</span>
+          </div>
+          <div class="auth-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>OmniTech</span>
+          </div>
+          <div class="auth-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v12l-8 4-8-4V6z"></path></svg>
+            <span>Synergy Data</span>
+          </div>
+          <div class="auth-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+            <span>Global Net</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ QUÉ RESOLVEMOS (VALOR) ═══════ -->
+  <section id="beneficios">
+    <div class="section-header reveal">
+      <span class="sh-label" data-i18n="s.benefits">Propuesta de valor</span>
+      <span class="sh-count">01</span>
+    </div>
+    
+    <div class="benefits-intro reveal">
+      <p data-i18n="ben.intro">Tu negocio compite por atención y eficiencia. Hacemos que ganes en ambas.</p>
+    </div>
+
+    <div class="bento-grid">
+      <div class="bento-card bento-large bento-dominant glow-effect reveal">
+        <div class="ben-icon">↑</div>
+        <h3 data-i18n="ben.1.t">Aumentás tus ventas sin invertir más en publicidad</h3>
+        <p data-i18n="ben.1.d">Diseñamos interfaces sin fricción. Cada píxel está optimizado para que tu cliente compre o contrate sin perderse en el proceso.</p>
+        <div class="bento-graphic bg-sales"></div>
+      </div>
+      <div class="bento-card bento-tall glow-effect reveal" style="--d:.1s">
+        <div class="ben-icon">⚙</div>
+        <h3 data-i18n="ben.2.t">Automatizás procesos</h3>
+        <p data-i18n="ben.2.d">Reemplazamos tareas manuales, planillas y mensajes repetitivos por sistemas autónomos 24/7.</p>
+        <div class="bento-graphic bg-gears"></div>
+      </div>
+      <div class="bento-card glow-effect reveal" style="--d:.15s">
+        <div class="ben-icon">⏱</div>
+        <h3 data-i18n="ben.3.t">Ahorrás tiempo (y plata)</h3>
+        <p data-i18n="ben.3.d">Tu equipo deja de apagar incendios y se enfoca en hacer crecer el negocio de verdad.</p>
+      </div>
+      <div class="bento-card glow-effect reveal" style="--d:.2s">
+        <div class="ben-icon">■</div>
+        <h3 data-i18n="ben.4.t">Tenés control total</h3>
+        <p data-i18n="ben.4.d">Paneles de gestión a medida con base de datos e integraciones con métricas en tiempo real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TRABAJO / CASO ═══════ -->
+  <section id="trabajo">
+    <div class="section-header reveal">
+      <span class="sh-label" data-i18n="s.work">Trabajo probado</span>
+      <span class="sh-count">02</span>
+    </div>
+
+    <article class="case-study reveal">
+      <div class="cs-top">
+        <div class="cs-tags">
+          <span data-i18n="p.velora.t1">Gestión</span>
+          <span>·</span>
+          <span data-i18n="p.velora.t2">Voz</span>
+          <span>·</span>
+          <span data-i18n="p.velora.t3">IA</span>
+        </div>
+        <div class="cs-right-top">
+          <span class="project-live"><span class="live-dot"></span><span data-i18n="p.live">Operando a escala</span></span>
+          <span class="cs-year">2025</span>
+        </div>
+      </div>
+
+      <div class="cs-name-row">
+        <div>
+          <a href="https://texterp.vercel.app/" target="_blank" rel="noopener" aria-label="Ver Velora">
+            <h2 class="cs-name cs-name-link">Velora</h2>
+          </a>
+          <a href="https://texterp.vercel.app/" target="_blank" rel="noopener" class="btn-case-cta" id="velora-link">
+            <span data-i18n="p.see">Ver resultados reales</span>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cs-body">
+        <div class="cs-col">
+          <p class="cs-col-label" data-i18n="cs.challenge">El problema de negocio</p>
+          <p class="cs-col-text" data-i18n="cs.velora.challenge">Un comercio minorista perdía horas todos los días conciliando ventas, stock y facturación entre tres sistemas rotos. La operación manual no les permitía escalar.</p>
+        </div>
+        <div class="cs-col">
+          <p class="cs-col-label" data-i18n="cs.solution">La solución desarrollada</p>
+          <p class="cs-col-text" data-i18n="cs.velora.solution">Construimos una plataforma de gestión accionada por voz con IA profunda. Integró todo en un solo flujo, emitiendo facturas y descontando stock en tiempo real.</p>
+        </div>
+      </div>
+
+      <div class="cs-metrics-bento">
+        <div class="bento-card glow-effect reveal">
+          <span class="cs-num">+37%</span>
+          <span class="cs-label" data-i18n="cs.m1">Ventas incrementadas <strong>en 30 días</strong></span>
+        </div>
+        <div class="bento-card glow-effect reveal" style="--d:.1s">
+          <span class="cs-num">-82%</span>
+          <span class="cs-label" data-i18n="cs.m2">Tiempo operativo eliminado <strong>al mes</strong></span>
+        </div>
+        <div class="bento-card glow-effect reveal" style="--d:.2s">
+          <span class="cs-num">0</span>
+          <span class="cs-label" data-i18n="cs.m3">Errores en facturación e inventario</span>
+        </div>
+      </div>
+
+      <blockquote class="cs-quote">
+        <p data-i18n="cs.velora.quote">&ldquo;El impacto fue inmediato. En una semana redujimos los errores a cero y liberamos casi todo el tiempo que pasábamos cargando datos. Se pagó sola.&rdquo;</p>
+        <cite data-i18n="cs.velora.cite">&mdash; Cadena minorista (3 sucursales, AMBA)</cite>
+      </blockquote>
+    </article>
+  </section>
+
+  <!-- ═══════ SERVICIOS ═══════ -->
+  <section id="servicios">
+    <div class="section-header reveal">
+      <span class="sh-label" data-i18n="s.services">Nuestro expertise</span>
+      <span class="sh-count">03</span>
+    </div>
+    <div class="services-intro reveal">
+      <p data-i18n="srv.intro">Construimos infraestructura digital robusta. No parches.</p>
+    </div>
+    <div class="service-list view-list">
+      <div class="srv-item">
+        <span class="srv-num">01</span>
+        <div class="srv-body">
+          <h3 data-i18n="srv.s1.t">Interfaces que hacen que el usuario no tenga que pensar</h3>
+          <p data-i18n="srv.s1.d">Cada clic es evidente. UI/UX enfocado en la conversión, reduciendo la fricción a cero y asegurando que no pierdas ventas.</p>
+        </div>
+      </div>
+      <div class="srv-item">
+        <span class="srv-num">02</span>
+        <div class="srv-body">
+          <h3 data-i18n="srv.s2.t">Apps que soportan crecimiento sin rehacer todo en 6 meses</h3>
+          <p data-i18n="srv.s2.d">Desarrollamos con stacks modernos y arquitectura cloud. Escalá de mil a cien mil usuarios sin que tu app se caiga.</p>
+        </div>
+      </div>
+      <div class="srv-item">
+        <span class="srv-num">03</span>
+        <div class="srv-body">
+          <h3 data-i18n="srv.s3.t">Negocios en piloto automático</h3>
+          <p data-i18n="srv.s3.d">Conectamos IA, pasarelas de pago y facturación para que todo tu ciclo de negocio funcione sin intervención humana repetitiva.</p>
+        </div>
+      </div>
+      <div class="srv-item">
+        <span class="srv-num">04</span>
+        <div class="srv-body">
+          <h3 data-i18n="srv.s4.t">Acompañamiento post-lanzamiento</h3>
+          <p data-i18n="srv.s4.d">No te entregamos el código y desaparecemos. Monitoreamos performance, iteramos y te ayudamos a crecer con datos reales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ NOSOTROS (HUMANIZACIÓN) ═══════ -->
+  <section id="nosotros">
+    <div class="section-header reveal">
+      <span class="sh-label" data-i18n="s.about">Quiénes somos</span>
+      <span class="sh-count">04</span>
+    </div>
+    <div class="founder-manifesto reveal">
+      <div class="manifesto-header">
+        <span class="manifesto-eyebrow">Carta de los Directores</span>
+        <h2 data-i18n="ab.title">La tecnología debería ser tu mayor activo, no un gasto invisible.</h2>
+      </div>
+      
+      <div class="manifesto-body">
+        <p class="manifesto-lead" data-i18n="ab.lead">Si estás leyendo esto, sabes lo caro que es tener equipos estancados en flujos repetitivos o un ecosistema digital que tus clientes abandonan a la mitad.</p>
+        <p data-i18n="ab.desc1">Durante más de 10 años hemos construido infraestructura digital que hoy opera de forma autónoma transaccionando ingresos reales. No somos un estudio abocado al premio de diseño. Somos <strong>arquitectos de software de alta conversión</strong>.</p>
+        <p data-i18n="ab.desc2">Nuestra misión es simple: construir herramientas (apps, webs transaccionales, dashboards) que escalen por sí solas. Si tu tecnología no te ahorra tiempo ni te hace ganar más capital mes a mes, no sirve.</p>
+        
+        <div class="manifesto-footer">
+          <div class="founder-signature" data-i18n="ab.sig">Equipo Director — Sora</div>
+          <div class="manifesto-stats">
+            <span class="m-stat" data-i18n="ab.s1">+10 Años en mercado</span>
+            <span class="m-stat" data-i18n="ab.s2">100% Retorno Obsesivo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACTO ═══════ -->
+  <section id="contacto">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <span class="contact-eyebrow" data-i18n="s.contact">Diagnóstico gratuito</span>
+        <h2 class="contact-title" data-i18n="ct.title">Si tu sistema hoy te hace perder dinero, hablemos.</h2>
+        <p class="contact-sub" data-i18n="ct.sub">En 30 minutos te decimos exactamente qué está frenando tu negocio y cómo solucionarlo. Cero fricción.</p>
+      </div>
+      <div class="contact-right reveal" style="--d:.1s">
+        <a href="https://wa.me/5491100000000?text=Hola%20Sora!%20Quiero%20hablar%20sobre%20escalar%20mi%20negocio%20con%20una%20app"
+           target="_blank" rel="noopener" class="btn-whatsapp" id="whatsapp-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-i18n="ct.wa">Empezar ahora por WhatsApp</span>
+        </a>
+        <a href="mailto:hola@sora.studio" class="btn-mail" id="email-btn">
+          <span data-i18n="ct.mail">hola@sora.studio</span>
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <a href="#" class="logo">
+          <span class="logo-kanji">空</span>
+          <span class="logo-name">Sora</span>
+        </a>
+        <span class="footer-tagline" data-i18n="ft.tagline">Agencia de producto y escala digital · Buenos Aires</span>
+      </div>
+      <div class="footer-right">
+        <p>© 2026 Sora</p>
+        <p data-i18n="ft.made">Construido en Argentina para el mundo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
