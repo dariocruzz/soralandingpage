@@ -46,11 +46,9 @@
   <!-- ═══════ HERO ═══════ -->
   <section id="hero">
     <div class="hero-content centered">
-      <div class="hero-top reveal">
-        <div class="pill-badge">
-          <span class="pill-dot"></span>
-          <span data-i18n="hero.label">Ecommerce Operating System</span>
-        </div>
+      <div class="pill-badge reveal">
+        <span class="pill-dot"></span>
+        <span data-i18n="hero.label">Ecommerce Operating System</span>
       </div>
       <h1 class="hero-title reveal">
         <span class="ht-line" data-i18n="hero.l1">Tu ecommerce</span>
@@ -133,26 +131,34 @@
     </div>
   </section>
 
-  <!-- ═══════ VELORA PRODUCT SHOWCASE (NUEVO NIVEL) ═══════ -->
-  <section id="velora-product">
-    <div class="product-showcase reveal">
-      <div class="ps-text">
-        <span class="ps-label" data-i18n="p.velora.t1">Innovación core</span>
-        <h2 data-i18n="ps.title">Tu negocio, tu voz.</h2>
-        <p data-i18n="ps.sub">Te presentamos Velora, nuestro motor de gestión por voz con IA. No más carga manual. Solo hablale y el sistema se encarga del resto.</p>
-        <ul class="ps-features">
-          <li data-i18n="ps.f1">Ventas por voz en tiempo real</li>
-          <li data-i18n="ps.f2">Sincronización de stock instantánea</li>
-          <li data-i18n="ps.f3">Facturación automática vía WhatsApp</li>
-        </ul>
-        <a href="https://texterp.vercel.app/" target="_blank" class="btn-primary" data-i18n="p.see">Ver Velora en acción</a>
+  <!-- ═══════ VELORA PRODUCT SHOWCASE (PRODUCT-FIRST AUTHORITY) ═══════ -->
+  <section class="product-showcase reveal" id="velora-showcase">
+    <div class="ps-image-wrapper">
+      <img src="assets/velora_mockup.png" alt="Velora Dashboard Mockup">
+    </div>
+    <div class="ps-feature-list">
+      <div>
+        <span class="ps-badge" data-i18n="p.velora.t1">Innovación core</span>
+        <h2 class="ps-title" data-i18n="ps.title">Tu negocio, tu voz.</h2>
+        <p class="ps-desc" data-i18n="ps.sub">Te presentamos Velora, nuestro motor de gestión por voz con IA. No más carga manual. Solo hablale y el sistema se encarga del resto.</p>
       </div>
-      <div class="ps-visual">
-        <div class="mockup-frame glow-effect">
-          <img src="assets/velora_mockup.png" alt="Velora Dashboard Mockup" class="mockup-img">
-          <div class="mockup-overlay"></div>
-        </div>
+      
+      <div class="ps-item">
+        <svg class="ps-item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg>
+        <div class="ps-item-text" data-i18n="ps.f1">Ventas por voz en tiempo real</div>
       </div>
+      <div class="ps-item">
+        <svg class="ps-item-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" /></svg>
+        <div class="ps-item-text" data-i18n="ps.f2">Sincronización de stock instantánea</div>
+      </div>
+      <div class="ps-item">
+        <svg class="ps-item-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" /><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 012-2V9a2 2 0 01-2-2h-1z" /></svg>
+        <div class="ps-item-text" data-i18n="ps.f3">Facturación automática vía WhatsApp</div>
+      </div>
+
+      <a href="#contacto" class="btn-primary pill" style="align-self: flex-start; margin-top: 16px;">
+        <span data-i18n="p.see">Ver Velora en acción</span>
+      </a>
     </div>
   </section>
 
