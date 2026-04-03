@@ -10,7 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark-theme">
+  <!-- Efecto de brillo de fondo -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="static-glow"></div>
 
   <!-- NAV -->
   <nav id="navbar">
@@ -42,23 +45,24 @@
 
   <!-- ═══════ HERO ═══════ -->
   <section id="hero">
-    <div class="hero-content">
-      <div class="hero-top reveal" style="margin-bottom: 32px;">
-        <span class="hero-label" data-i18n="hero.label" style="background: rgba(123,47,190,0.15); border: 1px solid var(--accent); padding: 8px 14px; border-radius: 4px; color: #fff;">La mayoría de las apps pierden dinero. La tuya no debería.</span>
-        <span class="hero-loc" style="display:none;">Buenos Aires · Est. 2025</span>
+    <div class="hero-content centered">
+      <div class="hero-top reveal">
+        <div class="pill-badge">
+          <span class="pill-dot"></span>
+          <span data-i18n="hero.label">Ecommerce Operating System</span>
+        </div>
       </div>
       <h1 class="hero-title reveal">
-        <span class="ht-line" data-i18n="hero.l1">Apps que hacen</span>
-        <span class="ht-line ht-italic" data-i18n="hero.l2">crecer tu negocio.</span>
+        <span class="ht-line" data-i18n="hero.l1">Tu ecommerce</span>
+        <span class="ht-line ht-italic" data-i18n="hero.l2">está creciendo.</span>
       </h1>
-      <div class="hero-rule"></div>
-      <div class="hero-footer reveal" style="--d:.1s">
-        <p class="hero-sub" data-i18n="hero.sub">Tu operación está perdiendo dinero. Cada pedido mal gestionado, cada error de stock y cada proceso manual es dinero que no vuelve. Construimos sistemas que automatizan pedidos, stock y atención para que puedas escalar sin caos operativo.</p>
-        <div class="hero-actions">
-          <a href="#contacto" class="btn-primary" data-i18n="hero.ctaPrimary">Sistematizar mi Ecommerce</a>
-          <a href="#servicios" class="btn-outline" data-i18n="hero.ctaSecondary">Ver módulos ↓</a>
+
+      <div class="hero-footer reveal">
+        <p class="hero-sub centered" data-i18n="hero.sub">Tu operación está perdiendo dinero. Cada error de stock y cada proceso manual es capital que no vuelve. Construimos sistemas que automatizan pedidos, stock y atención para que puedas escalar sin caos operativo.</p>
+        <div class="hero-actions centered">
+          <a href="#contacto" class="btn-primary pill" data-i18n="hero.ctaPrimary">Sistematizar mi Ecommerce</a>
+          <a href="#servicios" class="btn-outline pill" data-i18n="hero.ctaSecondary">Ver módulos ↓</a>
         </div>
-        <p style="font-size:12px; opacity:0.6; margin-top:8px; width:100%; text-align:center;" data-i18n="hero.micro">No trabajamos con proyectos desde cero.</p>
         <p class="hero-urgency" data-i18n="hero.urgency">⚡ Solo trabajamos con ecommerce que ya están facturando.</p>
       </div>
 
@@ -100,25 +104,54 @@
     <div class="bento-grid">
       <div class="bento-card bento-large bento-dominant glow-effect reveal">
         <div class="ben-icon">↑</div>
-        <h3 data-i18n="ben.1.t">Aumentás tus ventas sin invertir más en publicidad</h3>
-        <p data-i18n="ben.1.d">Diseñamos interfaces sin fricción. Cada píxel está optimizado para que tu cliente compre o contrate sin perderse en el proceso.</p>
-        <div class="bento-graphic bg-sales"></div>
+        <div class="ben-content">
+          <h3 data-i18n="ben.1.t">Aumentás tus ventas sin invertir más en publicidad</h3>
+          <p data-i18n="ben.1.d">Diseñamos interfaces sin fricción. Cada píxel está optimizado para que tu cliente compre o contrate sin perderse en el proceso.</p>
+        </div>
       </div>
       <div class="bento-card bento-tall glow-effect reveal" style="--d:.1s">
         <div class="ben-icon">⚙</div>
-        <h3 data-i18n="ben.2.t">Automatizás procesos</h3>
-        <p data-i18n="ben.2.d">Reemplazamos tareas manuales, planillas y mensajes repetitivos por sistemas autónomos 24/7.</p>
-        <div class="bento-graphic bg-gears"></div>
+        <div class="ben-content">
+          <h3 data-i18n="ben.2.t">Automatizás procesos</h3>
+          <p data-i18n="ben.2.d">Reemplazamos tareas manuales, planillas y mensajes repetitivos por sistemas autónomos 24/7.</p>
+        </div>
       </div>
       <div class="bento-card glow-effect reveal" style="--d:.15s">
         <div class="ben-icon">⏱</div>
-        <h3 data-i18n="ben.3.t">Ahorrás tiempo (y plata)</h3>
-        <p data-i18n="ben.3.d">Tu equipo deja de apagar incendios y se enfoca en hacer crecer el negocio de verdad.</p>
+        <div class="ben-content">
+          <h3 data-i18n="ben.3.t">Ahorrás tiempo (y plata)</h3>
+          <p data-i18n="ben.3.d">Tu equipo deja de apagar incendios y se enfoca en hacer crecer el negocio de verdad.</p>
+        </div>
       </div>
       <div class="bento-card glow-effect reveal" style="--d:.2s">
         <div class="ben-icon">■</div>
-        <h3 data-i18n="ben.4.t">Tenés control total</h3>
-        <p data-i18n="ben.4.d">Paneles de gestión a medida con base de datos e integraciones con métricas en tiempo real.</p>
+        <div class="ben-content">
+          <h3 data-i18n="ben.4.t">Tenés control total</h3>
+          <p data-i18n="ben.4.d">Paneles de gestión a medida con base de datos e integraciones con métricas en tiempo real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ VELORA PRODUCT SHOWCASE (NUEVO NIVEL) ═══════ -->
+  <section id="velora-product">
+    <div class="product-showcase reveal">
+      <div class="ps-text">
+        <span class="ps-label" data-i18n="p.velora.t1">Innovación core</span>
+        <h2 data-i18n="ps.title">Tu negocio, tu voz.</h2>
+        <p data-i18n="ps.sub">Te presentamos Velora, nuestro motor de gestión por voz con IA. No más carga manual. Solo hablale y el sistema se encarga del resto.</p>
+        <ul class="ps-features">
+          <li data-i18n="ps.f1">Ventas por voz en tiempo real</li>
+          <li data-i18n="ps.f2">Sincronización de stock instantánea</li>
+          <li data-i18n="ps.f3">Facturación automática vía WhatsApp</li>
+        </ul>
+        <a href="https://texterp.vercel.app/" target="_blank" class="btn-primary" data-i18n="p.see">Ver Velora en acción</a>
+      </div>
+      <div class="ps-visual">
+        <div class="mockup-frame glow-effect">
+          <img src="assets/velora_mockup.png" alt="Velora Dashboard Mockup" class="mockup-img">
+          <div class="mockup-overlay"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -126,7 +159,7 @@
   <!-- ═══════ TRABAJO / CASO ═══════ -->
   <section id="trabajo">
     <div class="section-header reveal">
-      <span class="sh-label" data-i18n="s.work">Trabajo probado</span>
+      <span class="sh-label" data-i18n="s.work">Casos de Éxito</span>
       <span class="sh-count">02</span>
     </div>
 
@@ -135,13 +168,12 @@
         <div class="cs-tags">
           <span data-i18n="p.velora.t1">Gestión</span>
           <span>·</span>
-          <span data-i18n="p.velora.t2">Voz</span>
+          <span data-i18n="p.velora.t2">Retail</span>
           <span>·</span>
-          <span data-i18n="p.velora.t3">IA</span>
+          <span data-i18n="p.velora.t3">Escala</span>
         </div>
         <div class="cs-right-top">
-          <span class="project-live"><span class="live-dot"></span><span data-i18n="p.live">Operando a escala</span></span>
-          <span class="cs-year">2025</span>
+          <span class="project-live"><span class="live-dot"></span><span data-i18n="p.live">Operando</span></span>
         </div>
       </div>
 
@@ -190,11 +222,36 @@
     </article>
   </section>
 
+  <!-- ═══════ NUESTRO PROCESO ═══════ -->
+  <section id="proceso">
+    <div class="section-header reveal">
+      <span class="sh-label" data-i18n="s.process">Nuestro Proceso</span>
+      <span class="sh-count">03</span>
+    </div>
+    <div class="process-grid reveal">
+      <div class="process-step">
+        <div class="proc-num">01</div>
+        <h3 data-i18n="prc.1.t">1. Discovery</h3>
+        <p data-i18n="prc.1.d">Auditamos tu operación actual y detectamos los cuellos de botella que te hacen perder dinero.</p>
+      </div>
+      <div class="process-step">
+        <div class="proc-num">02</div>
+        <h3 data-i18n="prc.2.t">2. Systems Design</h3>
+        <p data-i18n="prc.2.d">Diseñamos la arquitectura de tu Ecommerce OS, integrando Shopify, stock y pagos.</p>
+      </div>
+      <div class="process-step">
+        <div class="proc-num">03</div>
+        <h3 data-i18n="prc.3.t">3. Scale & AI</h3>
+        <p data-i18n="prc.3.d">Implementamos el sistema y entrenamos a tu equipo en el uso de herramientas como Velora.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══════ OFERTA 10/10 ═══════ -->
   <section id="servicios">
     <div class="section-header reveal">
       <span class="sh-label" data-i18n="s.services">Oferta: Ecommerce OS</span>
-      <span class="sh-count">03</span>
+      <span class="sh-count">04</span>
     </div>
     <div class="services-intro reveal">
       <p data-i18n="srv.intro">Un sistema operativo completo para escalar sin fricción.</p>
