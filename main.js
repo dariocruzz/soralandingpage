@@ -8,11 +8,12 @@ const T = {
     "hero.label":"Ecommerce Operating System",
     "hero.l1":"Tu ecommerce", "hero.l2":"está creciendo.",
     "hero.sub":"Tu operación está perdiendo dinero. Cada error en pedidos, stock o atención es capital que tu ecommerce no recupera. Construimos sistemas que automatizan tu infraestructura para que puedas escalar sin caos operativo.",
-    "hero.ctaPrimary":"Sistematizar mi Ecommerce", "hero.ctaSecondary":"Ver el sistema ↓",
+    "hero.ctaPrimary":"Sistematizar mi Ecommerce", "hero.ctaSecondary":"Ver módulos ↓",
     "hero.urgency":"⚡ Solo trabajamos con ecommerce que ya están facturando.",
-    "hero.micro":"No trabajamos con proyectos desde cero.",
     "auth.label":"Infraestructura preparada para:",
-    "auth.1":"Tiendas de Alto Volumen", "auth.2":"Marcas en Expansión", "auth.3":"Retail B2B/B2C", "auth.4":"Operaciones Complejas",
+    "auth.1":"Retail & Comercios", "auth.2":"Gestión de Stock", "auth.3":"Ventas B2B", "auth.4":"Operaciones Logísticas",
+    "ps.title":"Tu negocio, tu voz.", "ps.sub":"Te presentamos Velora, nuestro motor de gestión por voz con IA. No más carga manual. Solo hablale y el sistema se encarga del resto.",
+    "ps.f1":"Ventas por voz en tiempo real", "ps.f2":"Sincronización de stock instantánea", "ps.f3":"Facturación automática vía WhatsApp",
     "s.benefits":"El Problema Operativo", "ben.intro":"El caos operativo frena tu crecimiento. Arreglamos la base.",
     "ben.1.t":"Reducís errores humanos masivos", "ben.1.d":"Eliminamos planillas rotas y traspasos manuales donde se pierde información y dinero todos los días.",
     "ben.2.t":"Eliminás cuellos de botella", "ben.2.d":"Desatascamos la facturación, los envíos y la atención para que puedas escalar ventas indefinidamente.",
@@ -53,18 +54,22 @@ const T = {
     "s.contact":"Aplicá ahora", "ct.title":"Si tu operación hoy está limitando tu crecimiento, lo vemos en 30 minutos.", "ct.sub":"Te mostramos exactamente dónde estás perdiendo dinero.",
     "ct.filter":"No trabajamos con ecommerce que están empezando. Solo optimizamos negocios que ya tienen volumen y necesitan escalar sin romper su operación.",
     "ct.wa":"Hablar con Director (WhatsApp)", "ct.mail":"hola@sora.studio",
-    "ft.tagline":"Agencia de producto y escala digital · Buenos Aires", "ft.made":"Construido en Argentina para el mundo"
+    "ft.tagline":"Agencia de producto y escala digital · Buenos Aires", "ft.made":"Construido en Argentina para el mundo",
+    "s.process":"Nuestro Proceso",
+    "prc.1.t":"1. Discovery", "prc.1.d":"Auditamos tu operación actual y detectamos los cuellos de botella que te hacen perder dinero.",
+    "prc.2.t":"2. Systems Design", "prc.2.d":"Diseñamos la arquitectura de tu Ecommerce OS, integrando Shopify, stock y pagos.",
+    "prc.3.t":"3. Scale & AI", "prc.3.d":"Implementamos el sistema y entrenamos a tu equipo en el uso de herramientas como Velora."
   },
   en: {
     "nav.benefits":"What we solve", "nav.work":"Work", "nav.services":"Services", "nav.about":"About us", "nav.contact":"Let's talk",
     "hero.label":"Ecommerce Operating System",
     "hero.l1":"Your ecommerce", "hero.l2":"is growing.",
     "hero.sub":"Your operation is losing money. Every error in orders, inventory, or support is capital your ecommerce won't recover. We build systems that automate your infrastructure so you can scale without operational chaos.",
-    "hero.ctaPrimary":"Systematize my Ecommerce", "hero.ctaSecondary":"See the system ↓",
+    "hero.ctaPrimary":"Systematize my Ecommerce", "hero.ctaSecondary":"See modules ↓",
     "hero.urgency":"⚡ We strictly work with ecommerce ecosystems already invoicing.",
     "hero.micro":"We do not work with zero-revenue projects.",
     "auth.label":"Infrastructure prepared for:",
-    "auth.1":"High Volume Stores", "auth.2":"Expanding Brands", "auth.3":"B2B/B2C Retail", "auth.4":"Complex Operations",
+    "auth.1":"Retail & Commerce", "auth.2":"Stock Management", "auth.3":"B2B Sales", "auth.4":"Logistics Operations",
     "s.benefits":"The Operational Nightmare", "ben.intro":"Operational chaos halts growth. We fix the foundation.",
     "ben.1.t":"Reduce massive human errors", "ben.1.d":"We eliminate broken spreadsheets and manual transfers where data and capital is lost daily.",
     "ben.2.t":"Eliminate bottlenecks", "ben.2.d":"We untangle billing, shipping, and support so you can scale sales infinitely without breaking.",
@@ -105,7 +110,11 @@ const T = {
     "s.contact":"Apply now", "ct.title":"If your operation is limiting your growth today, we'll see it in 30 minutes.", "ct.sub":"We show you exactly where you are losing money.",
     "ct.filter":"We do not work with starting ecommerce setups. We only optimize businesses that already have volume and need to scale without breaking their operation.",
     "ct.wa":"Talk to Director (WhatsApp)", "ct.mail":"hello@sora.studio",
-    "ft.tagline":"Digital product & scaling agency · Global", "ft.made":"Built in Argentina for the world"
+    "ft.tagline":"Digital product & scaling agency · Global", "ft.made":"Built in Argentina for the world",
+    "s.process":"Our Process",
+    "prc.1.t":"1. Discovery", "prc.1.d":"We audit your current operation and detect the bottlenecks that are costing you money.",
+    "prc.2.t":"2. Systems Design", "prc.2.d":"We design the architecture of your Ecommerce OS, integrating Shopify, inventory and payments.",
+    "prc.3.t":"3. Scale & AI", "prc.3.d":"We implement the system and train your team on using tools like Velora."
   }
 };
 
@@ -153,6 +162,15 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
   });
 });
+
+const glow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', e => {
+  if (glow) {
+    glow.style.opacity = '1';
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  }
+}, { passive: true });
 
 document.addEventListener('DOMContentLoaded', () => {
   applyLang();
